@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap");
+h1 {
+  font-family: "Amatic SC", courier;
+  color: #059b9a;
+  font-size: 60px;
+  text-align: center;
+}
+h2 {
+  font-family: "Amatic SC", courier;
+  color: #059b9a;
+  font-size: 30px;
+  text-align: right;
+}
+h3 {
+  font-family: "Amatic SC", courier;
+  color: #059b9a;
+  font-size: 35px;
+  text-align: center;
+}
+h4 {
+  font-family: "Amatic SC", courier;
+  color: #059b9a;
+  font-size: 30px;
+  text-align: center;
+}
+h5 {
+  font-family: "Amatic SC", courier;
+  color: #059b9a;
+  font-size: 30px;
+  text-align: center;
+}
+body {
+  background-color: #dddddd;
+  font-family: courier;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+/*figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  display: block;
+} */
+
+.dark-mode {
+  background-color: #0c0636;
+  color: #fafafa;
+}
+.mode-tab {
+  float: right;
+}
+
+.tab {
+  overflow: hidden;
+  border: 30px solid #033649;
+  background-color: #f1f1f1;
+  /* padding: 14px 16px; */
+  margin: 40px 40px 0px 40px;
+}
+
+.tab button {
+  background-color: white;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 0px, 20px, 0px, 20px; */
+  transition: 3000;
+  font-family: "Amatic SC", arial;
+  font-size: 40px;
+  color: #059b9a;
+}
+.content {
+  display: none;
+  padding: 20px;
+  margin: 0px 40px 40px 40px;
+  border: 1px solid #033649;
+  font-size: 20px;
+}
+#toplist {
+  margin: 40px;
+  /* justify-content: center; */
+  text-align: center;
+}
+#game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #0c0636;
+}
+#character {
+  width: 20px;
+  height: 50px;
+  background-color: #033649;
+  position: relative;
+  top: 150px;
+}
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: #059b9a;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  animation: block 1s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 200px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.animate {
+  animation: jump 500ms;
+}
+#gamebreak {
+  display: block;
+  /* justify-content: left; */
+}
+a:link {
+  color: #53ba83;
+}
+a:visited {
+  color: #033649;
+}
+a:hover {
+  color: #033649;
+}
+a:active {
+  color: #53ba83;
+}
+.links {
+  padding: 0px 20px 0px 20px;
+  justify-content: center;
+}
